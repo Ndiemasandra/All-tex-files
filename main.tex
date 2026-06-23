@@ -1,125 +1,162 @@
-\documentclass{article}
-\usepackage{bubblecv}
+\documentclass[12pt]{article}
 
+\usepackage{report}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage[colorlinks=true, linkcolor=black, citecolor=blue, urlcolor=blue]{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{lipsum}		% Can be removed after putting your text content
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{doi}
+\usepackage{float}
+\setcitestyle{aysep={,}}
+
+
+
+\title{PERSONAL PORTFOLIO OVERALL REPORT}
+
+\author{Sandra Cherono Ndiema\\
+\AND
+Student ID: GH1058293\\
+\AND
+\AND
+\AND
+\AND
+	Computer Science Lab\\
+\AND
+	Gisma University Of Applied Sciences\\
+}
+
+% Uncomment to remove the date
+\date{July,2026}
+
+% Uncomment to override  the `A preprint' in the header
+\renewcommand{\headeright}{Final assessment report}
+\renewcommand{\undertitle}{Final assessment report}
+\renewcommand{\shorttitle}{}
 
 
 \begin{document}
+\maketitle
+
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+
+\newpage
+\setcounter{page}{1}
+\section{INTRODUCTION}
+This report aims to explain the inspiration ,design and overall implementation of my personal portfolio.This website is hosted on git hub pages as it offers free hosting which is very convenient for me as a student.\href{https://ndiemasandra.github.io/personalportfolio/}{My portfolio website}
+I was aiming to show my current progress with HTML and CSS which are the main programming languages used to write this website.
+ 
 
 
-\begin{cv}[avatar2]{Sandra Ndiema}{Computer Science student}
+\section{PORTFOLIO}
+\subsection{Brief overview}
+This website was geared to attract to attract the hiring managers at Deustche's bank:\href{https://www.linkedin.com/jobs/view/4338103919}{prospective job}.Their linked in brief shows that they are looking for a computer science student who is willing to learn.Hence the portfolio aims to give them a sense of my creativity and personality.
+\label{sec:headings}
+\subsection{Design and content.}
+This part will explain the design decisions made for this portfolio and the content added to each page.\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Homepage.png}
+    \caption{portfolio homepage}
+    \label{fig:placeholder}
+\end{figure}
+The general color theme used throughout the website is brown.This is mainly because it is one of my favorite colors and for  no other particular reason apart from that.This first page has a kind of ombre effect to add some depth into the page. To properly capture the attention of the hiring managers at the home page, my name is in bold , in white and is in a larger font as opposed to the rest of the text.  A link allowing managers to download my curriculum vitae with ease is achieved using button class .\\The upper left part of the header contains \textit{the navigation bar}.  The navigation bar easily allows the people using the website to go to different places to the website , it transitions using 0.3 sec ease meaning the normal eye cannot properly follow the transition, making it appear seamless. \\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{me.png}
+    \caption{about page}
+    \label{fig:placeholder}
+\end{figure}
+The next page on the website is the \textit{about me page} .
+I choose to place a photo of myself in order to familiarize myself to the hiring managers. The brief paragraph contains information tailored to the job description and a bit of information about me.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{skillspage.png}
+    \caption{Skills page}
+    \label{fig:placeholder}
+\end{figure}
+The \textit{skills page} contains all the relevant technical skills that I have. The skills each have their own bubble made using a silk bubble class. This is to make the page fun and also showcase my creative side. The bubbles are in a different shade of brown than the background to also make them stand out .
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Screenshot 2026-06-23 232213.png}
+    \caption{projects page}
+    \label{fig:placeholder}
+\end{figure}
+The \textit{projects page} is  evidence of the skills page , each project has its own card , which is also a different color than the background.The first project is this portfolio, which serves as evidence for my HTML and CSS skills.The second project is the one I had to do for my high school certificate as a computer student. \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{KC.png}
+    \caption{KCSE paper 3}
+    \label{fig:placeholder}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{SE.png}
+    \caption{Candidate instructions}
+    \label{fig:placeholder}
+\end{figure}
+The project required me to develop a computerized database for Victory School for their clubs and society for all their students. I used Microsoft database to create it and word to write the report. The practical aspect enabled me to gain knowledge on Microsoft database.The practical paper, paper 2 tested on excel , database , word and desktop publishing , therefore making me skilled in Microsoft packages.The third project uses mainly HTML , CSS and I used Claude to help increase the functionality of the webpage after I had made the initial HTML page on VS code. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{contactme.png}
+    \caption{contacts page}
+    \label{fig:placeholder}
+\end{figure}
+The end of the website is the \textit{contact page}. The contacts page gives easy access to all my contact details. The information is presented in links , this allows easy access for the hiring managers .
+\subsection{Responsiveness}
+The portfolio is able to be hosted both in a mobile phone and in a pc.This was achieved using an @media tag in the CSS and placing the max-width to be 900 px.This allows the elements to maintain their position in a smaller screen.And when loaded in a pc it ignores the command.Furthermore I used the flex box in my CSS to allow the elements to share space evenly and have a responsive design.\\
+\section{STRENGTHS AND WEAKNESSES}
+\subsection{Strengths}
+The portfolio is highly responsive: it has working links and can work on both mobile phones and in a pc.The portfolio is also aesthetically pleasing , using a moderate color palate that is soft on the eyes.The portfolio also has a similar theme to my CV, hence there is no format change making it easier for the brain to register information.
+\subsection{Weaknesses}
+While the portfolio has information, I fear it I neither have enough projects nor skills . This could be attributed to my limited experience having just completed high school.I hope to change that in the  future and add more data to those sections.
+I also failed to include my educational background, as I felt it would be redundant considering it is covered extensively in my CV.
+\section{CONCLUSION}
+Therefore, in conclusion, this portfolio effectively shows my current skills and evidence, while also conveying my creativity.It also clearly shows my shortcomings.In the next year I hope to add at least 2 more projects and 3 more skills in order to  achieve my goals.I also want to learn how to add more graphics to the page.And learn about python programming language.I hope this report was a clear reflection of the website presented links for the subsequent git hub repositories are in the references below.
 
 
-\cvsection[summary]{Profile} %-----------------------------------------------------------
-I am flexible and quick to adjust to different environments.While having limited experience I am a quick learner ,hardworking and willing to expand my craft . I am hopeful that I will be a worthwhile addition to your team .
-
-\cvsection[education]{Education}  %------------------------------------------------------
-
-\begin{cvevent}[2026]
-   \textbf{\cvname{\textbf{Gisma University}} }
-    \cvdescription{Bsc Computer Science\\Berlin,Germany}
-\end{cvevent}
-\begin{cvevent}[2022][2025]
-     \cvname{Moi High School Kabarack}
-     \cvdescription{Kakuru,Kenya\\KCSE ;A-  (77 points)}
-\end{cvevent}
-\begin{cvevent}[2014][2021]
-     \cvname{Visa Oshwal Primary School}
-     \cvdescription{Nairobi,Kenya\\KCPE : 404 marks}
-\end{cvevent}
-\cvsection[work]{Referees}
-\begin{cvevent}
-    Mr Bethuel Muigai\\
-    \cvdescription{Chemistry teacher \\Moi High School Kabarack\\Email:bethmuig@gmail.com\\Tel:+254 701006472}
-\end{cvevent}
-\cvsection[target]{\textbf{Extracurricular activities}}  %----------------------------------------------------------
-
-\begin{cvevent}
-    \cvname{Reading }
-\end{cvevent}
-\cvseparator[2]
-
-\begin{cvevent}
-    \cvname{Painting and drawing}
-\end{cvevent}
-
-\cvseparator[2]
-\begin{cvevent}
-    \cvname{Hiking and running}
-\end{cvevent}
-
-\cvseparator[2]
-\begin{cvevent}
-    \cvname{Watching films}
-\end{cvevent}
 
 
-\cvsidebar %-----------------------------------------------------------------------------
+
+\bibliographystyle{acl_natbib}
+\bibliography{references}  
+\begin{itemize}
+    \item Ndiemasandra, (2026) Personalportfolio . Available at: \textcolor{blue}{https://github.com/Ndiemasandra/personalportfolio (Accessed: 20 June 2026).}
+    \item Ndiemasandra.,(2026) All-tex-files .Available at:\textcolor{blue}{https://github.com/Ndiemasandra/All-tex-files (Accessed: 20 June 2026).}
+    \item NdiemaSandra,(2026) Technical-excercises. Available at: \textcolor{blue}{https://github.com/Ndiemasandra/Technical-excercises (Accessed: 24 June 2026).}
+\end{itemize}%%% Uncomment this line and comment out the ``thebibliography'' section below to use the external .bib file (using bibtex) .
 
 
-\cvsection[contact]{Contact}  %----------------------------------------------------------
+%%% Uncomment this section and comment out the \bibliography{references} line above to use inline references.
+% \begin{thebibliography}{1}
 
-\begin{cvitem}[Envelope][4]
-    \textbf{Email}\\
-    \href{ndiemasandracherono@gmail.com}{\texttt{ndiemasandracherono@gmail.com}}
-\end{cvitem}
+% 	\bibitem{kour2014real}
+% 	George Kour and Raid Saabne.
+% 	\newblock Real-time segmentation of on-line handwritten arabic script.
+% 	\newblock In {\em Frontiers in Handwriting Recognition (ICFHR), 2014 14th
+% 			International Conference on}, pages 417--422. IEEE, 2014.
 
-\cvseparator[3]
-\begin{cvitem}[Phone][4]
-    \textbf{Phone}\\
-    \href{tel:+49 01551105221}{\texttt{+49 01551105221}}
-\end{cvitem}
+% 	\bibitem{kour2014fast}
+% 	George Kour and Raid Saabne.
+% 	\newblock Fast classification of handwritten on-line arabic characters.
+% 	\newblock In {\em Soft Computing and Pattern Recognition (SoCPaR), 2014 6th
+% 			International Conference of}, pages 312--318. IEEE, 2014.
 
-\cvseparator[3]
-\begin{cvitem}[Home][4]
-    \textbf{Address}\\
-    Berlin, Germany
-\end{cvitem}
+% 	\bibitem{hadash2018estimate}
+% 	Guy Hadash, Einat Kermany, Boaz Carmeli, Ofer Lavi, George Kour, and Alon
+% 	Jacovi.
+% 	\newblock Estimate and replace: A novel approach to integrating deep neural
+% 	networks with existing applications.
+% 	\newblock {\em arXiv preprint arXiv:1804.09028}, 2018.
 
+% \end{thebibliography}
 
-\cvsection[skills]{Technical skills}  %-----------------------------------------------------------
-\cvskill{Microsoft excel}{Excellent}{0.8}
-\cvskill{Microsoft word} {Excellent}{0.8}
-\cvskill{Bash}{Basic}{0.3}
-\cvskill{Html and Css}{Basic}{0.3}
-
-\cvsection[skills]{Soft skills}
-\begin{cvitem}
-    Good listener
-\end{cvitem}
-
-\cvseparator
-\begin{cvitem}
-    Problem solving
-\end{cvitem}
-
-\cvseparator
-\begin{cvitem}
-    Team player
-\end{cvitem}
-
-\cvseparator
-\begin{cvitem}
-    Time conscious
-\end{cvitem}
-
-\cvseparator
-\begin{cvitem}
-    Diligent
-\end{cvitem}
-
-\cvseparator
-\begin{cvitem}
-    Adaptable
-\end{cvitem}
-
-
-\cvsection[languages]{Languages}  %--------------------------------------------------------
-
-\cvskill{English}{Fluent}{1.0}
-\cvskill{Swahili}{Fluent}{1.0}
-\cvskill{German}{Basic}{0.2}
-
-
-\end{cv}
 
 \end{document}
