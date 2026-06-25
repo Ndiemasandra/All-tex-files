@@ -1,1 +1,1 @@
-This repository contains all the tex. files for my assesment, the zip files contains both the main tex files and the other resources I used in the tex files. The report main tex file and main tex files ,contain the main text .
+This repository contains all the tex. files for my assesment, the zip files contains both the main tex files and the other resources I used in the tex files. The report main tex file and main tex files ,contain the main text .The subsequent pdf files are also upoaded here.
